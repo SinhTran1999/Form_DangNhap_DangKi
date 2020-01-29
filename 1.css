@@ -1,0 +1,160 @@
+
+
+*{margin: 0; padding: 0;}
+body{
+  font-family: segoe ui light;
+}
+.yeucau a.dk {
+    color: #3DC1D0!important;
+}
+.yeucau a.dk:hover {
+    text-decoration: none;
+}
+.yeucau a.dn {
+    color: #d03d9c!important;
+}
+.yeucau a.dn:hover {
+    text-decoration: none;
+}
+select#nghenghiep {border-radius: 20%;border: 5px solid #3DC1D0;}
+.allnut {
+    text-align: center;
+    padding-top: 10px;
+} 
+.noidung_login_signin{
+  padding-bottom: 5px;
+  margin: auto auto;
+  width: 600px;
+  height: 100%;
+  background: rgba(140, 180, 199, 0.24);
+  border-radius: 12px;
+}
+.tab {
+  text-decoration: none;
+  background: #3DC1D0;
+  display: inline-block;
+  padding: 12px 40px;
+  color: white;
+  transition: 0.4s;
+  border-radius: 22px;
+  font-family: 'Righteous', cursive;
+}
+
+a#dangki:focus {
+    text-decoration: none;
+    color: white;
+}
+
+a#dangnhap {
+    color: white;
+    background: #d03d9c!important;
+}
+
+a#dangnhap:focus {
+    text-decoration: none;
+}
+
+a#dangnhap:hover {
+    text-decoration: none;
+    background: #d03d9cb3!important;
+    color: black;
+}
+
+a#dangki:hover {
+    text-decoration: none;
+    background: #3dc1d0ba;
+    color: black;
+}
+
+#dangnhap{
+  background:#E0D9D9;
+}
+
+#divdangnhap{
+  width: auto;
+  height: 100%;
+  display:none;
+  margin-left: 50px;
+    margin:10px auto;    
+    background: rgba(140, 180, 199, 0.24); 
+    border-radius: 10px;
+    padding:5px 30px 30px 50px ;
+}
+
+#divdangki{
+  width: auto;
+  height: 100%;
+  margin-left: 50px;
+    margin:10px auto;    
+    background: rgba(140, 180, 199, 0.24); 
+    border-radius: 10px;
+    padding:5px 30px 30px 50px ;
+}
+#nutDangki:hover, #nutDangNhap:hover{
+      cursor: pointer;
+      background: #3dd0c47a;
+}
+#pthongbao {
+  color: #f6ee1b;
+  padding: 20px;
+  background: #763dd0!important;
+  display: none;
+  margin-right: 30px;
+  width: 100%;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+}
+.tieude{
+  text-align:center;
+  font-family: 'Righteous', cursive;
+  text-transform: uppercase;
+  text-shadow: 4px 0px 2px beige;
+  color: #3DC1D0;
+}
+h2.tieude.tddn {
+    color: #d03d9c!important;
+}
+.text1{
+  display: inline-block;
+  background: #3DC1D0;
+  color: white;
+  padding: 8px 18px 8px 18px;
+  border-radius: 100%;
+  font-size: 21px;
+}
+#divdangnhap span.text1 {
+    background: #d03d9c!important;
+}
+.text2{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+}
+.yeucau {
+    margin-top: 24px
+}
+.nhapdulieu{
+  margin-top: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+.nutdangnhap, .nutdangki{
+  padding: 20px;
+  width: 100%;
+  color: white;
+  background: #3DC1D0;
+  border-radius: 26px;
+  font-family: 'Righteous', cursive;
+  transition: 0.5s;
+  transform: translateX(50px);
+}
+
+input#nutDangNhap {
+    background: #d03d9c!important;
+}
