@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Example </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="vendor/bootstrap.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="vendor/popper.min.js"></script>
+  <script type="text/javascript" src="1.js"></script>
+  <link rel="stylesheet" href="vendor/bootstrap.css">
+  <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="fonts/fontawesome/css/bootstrap.min.css">
+  <link rel="stylesheet" href="1.css">
+  <!-- load font,font-family: 'Righteous', cursive; -->
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+  <!-- load font, font-family: 'Dancing Script', cursive; -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="noidung_login_signin">
+    <div class="allnut">
+      <a id="dangki" href="#" class="tab" onclick="onDangki()">ĐĂNG KÝ</a>
+      <a id="dangnhap" href="#" class="tab" onclick="onDangNhap()">ĐĂNG NHẬP </a>
+    </div> <!-- het div allnut -->
+    <div class="container">
+        <div id="divdangki" class="divForm">
+          <form action="" name="frmDangKi" class="form_signin">
+            <hr><h2 class="tieude">đăng ký </h2><hr/>
+            <div id="thongbao">
+              <p id="pthongbao">
+          
+              </p>
+            </div>
+            
+            <table>
+              <tr>
+                <div class="form-group">
+                  <span class="text1"style="">1</span> <span class="text2">Tên đăng nhập :</span>
+                  <input type="text" class="form-control nhapdulieu" name="usename" pattern="[a-z0-9_-]{8,32}"placeholder="Nhập vào tên đăng nhập..." title="Phải chứa từ 8 ký tự đến 32 ký tự không dấu và không chứa ký tự đặt biệt !,@.#.$...!" id="tendangnhap" required>
+                </div>
+              </tr>
+              <tr>
+                  <div class="form-group">
+                    <span class="text1"style="">2</span> <span class="text2">Mật khẩu :</span>
+                    <input type="password"  name="matkhau" class="form-control nhapdulieu" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,32}" title="Phải chứa ít nhất một số và một chữ hoa và chữ thường và từ 8 đến 32 ký tự không dấu...!" placeholder="Nhập vào mật khẩu" id="matkhau" required>
+                </div>
+              </tr>
+              <tr> 
+                <div class="form-group">
+                  <span class="text1"style="">3</span> <span class="text2">Email :</span>
+                  <input type="email"  class="form-control nhapdulieu" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Nhập vào email..." id="email" required>
+                </div> 
+              </tr> 
+              <tr>
+                <div class="form-group">
+                  <span class="text1"style="">4</span> <span class="text2">Nghề nghiệp :</span>
+                  <select id="nghenghiep" class="drnghenghiep">
+                    <option>Vui lòng chọn</option>
+                    <option>Lập trình viên</option>
+                    <option>Ngân hàng</option>
+                    <option>Giảng viên</option>
+                  </select>
+                </div>
+              </tr>
+              <tr>
+                <div class="form-group">
+                  <span class="text1"style="">5</span> <span class="text2">Tuổi :</span>
+                  <input type="number"  class="nhapdulieu form-control" pattern="[0-9]{2,3}" title="Phai nhập số tuổi của bạn..!" name="tuoi" placeholder="Nhập vào tuổi..." id="tuoi" required>
+                </div>
+              </tr>
+              <tr>
+                <td><span class="text1"style="">6</span> <span class="text2">Giới tính :</span></td>
+                <td>
+                  <span><input type="radio" value="nam" id="nam" name="gioitinh"/> Nam</span>
+                   <span><input type="radio" value="nu" id="nu" name="gioitinh"/> Nữ</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" > 
+                  <input type="submit" value="ĐĂNG KÍ" id="nutDangki" class="nutdangki text-center" onclick="return KiemTraHopLe()"/>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"> 
+                  <h3 class="yeucau text2 text-center">Bạn đã có tài khoản? Vui lòng click <a href="#" class="dn" onclick="onDangNhap()">Đăng nhập</a></h3>       
+                </td>
+              </tr>
+            </table>
+            <br>
+          </form> <!-- het form_signin -->
+       </div> <!-- het id = divdangki -->
+        <div id ="divdangnhap" class="divForm">
+          <form name="frmDangNhap " action="" class="form_login">
+            <h2 class="tieude tddn">đăng nhập</h2>
+            <hr/>
+            <table>
+              <tr>
+                <div class="form-group">
+                  <span class="text1"style="">1</span> <span class="text2">Tên đăng nhập :</span>
+                  <input type="text" class="nhapdulieu form-control" pattern="[a-z0-9_-]{8,32}"title="Phải chứa từ 8 ký tự đến 32 ký tự không dấu và không chứa ký tự đặt biệt !,@.#.$...!" name="username" placeholder="Nhập vào tên đăng nhập..." id="tendangnhap" required>
+                </div>
+              </tr>
+              
+              <tr>
+                <div class="form-group">
+                  <span class="text1"style="">2</span> <span class="text2">Mật khẩu :</span>
+                  <input type="password" class="nhapdulieu form-control" name="username" placeholder="Nhập vào mật khẩu..." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,32}" title="Phải chứa ít nhất một số và một chữ hoa và chữ thường và từ 8 đến 32 ký tự không dấu...!" id="matkhau" required>
+                </div>
+              </tr>
+              
+              <tr>
+                <td colspan="2" style="text-align:center"> 
+                  <input type="checkbox" id="chxGhiNho"/>  Ghi nhớ lần sau
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" style="text-align:center"> 
+                  <a href="#">Quên mật khẩu</a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" style="text-align:center"> 
+                  <input type="submit" value="ĐĂNG NHẬP" id="nutDangNhap" class="nutdangnhap"/>
+                </td>
+              </tr>
+              
+              <tr>
+                <td colspan="2"> 
+                  <h3 class="yeucau text2 text-center">Bạn chưa có tài khoản? Vui lòng click <a href="#" class="dk" onclick="onDangki()">Đăng Ký</a></h3>         
+                </td>
+              </tr>
+            </table>
+          </form>
+      </div><!-- het divdangnhap -->
+    </div> <!-- het container   -->
+</div><!--  het div noidung_login_login -->
+</body>
+</html>
